@@ -95,6 +95,49 @@
         width: 100%;
       }
     }
+	.text-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		text-align: center;
+	}
+
+	@media only screen and (max-width: 767px) {
+		.left-menu {
+			display: none;
+		}
+		.right-content {
+			width: 100%;
+		}
+		.text-overlay h1 {
+			font-size: 1.5rem;
+		}
+		.text-overlay p {
+			font-size: 1rem;
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		.business-section {
+			display: flex;
+			flex-direction: row;
+		}
+		.left-menu {
+			width: 30%;
+			margin-right: 20px;
+		}
+		.right-content {
+			width: 70%;
+		}
+		.text-overlay h1 {
+			font-size: 2rem;
+		}
+		.text-overlay p {
+			font-size: 1.2rem;
+		}
+	}
 	
 	#about {
 	  position: relative;
